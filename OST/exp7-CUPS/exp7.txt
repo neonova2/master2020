@@ -1,0 +1,40 @@
+#CUPS
+sudo apt install cups
+#Install the A printer administration tool
+sudo apt install install system-config-printer
+#Configuring CUPS
+#Open the cups by typing following URL
+ https://localhost:631/(go to browser)
+
+#after that do
+In this click on the Adding Printers and Classes
+Here click on the Add Printer.
+
+After clicking on the Add Printer It will ask you for permission. Here you have to enter the
+system root username and password
+
+Then CUPS search for the printers available in your network.
+
+If your printer is connected to the network it shows in the Discovered Network Printers. Select
+the printer and click on Continue button.
+
+In following window give the name of printer and also description and location. At the location
+give your Lab name
+
+Here select the Maker of the Printer and click on the add printer
+
+Here select the Model of the Printer and click on the add printer
+
+Here you have to set the default options for printer. To set it click on the set default options. This
+is to manage paper size and also color and Quality.
+
+After setting the options you can see following screen. In this you can see the maintenaince, in
+that drop down you can delete the printer and also Edit the printer.
+Below that you can see the Jobs. In that you can see Jobs you did till now means if you took
+any print from your machine that status it shows.
+
+If you want to see is your printer configured correctly , Go to the menu name called System -&gt;
+Administration -> Printing
+
+
+

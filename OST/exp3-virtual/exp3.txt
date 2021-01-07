@@ -1,0 +1,16 @@
+#download os MSDOS
+#install qemu
+sudo apt-get install qemu
+#check package
+rpm -qa | grep qemu
+apt show qemu-system-x86
+
+#1.make a dir
+mkdir virtual
+#2.Move the downloaded iso file of freedos into the directory virtual
+mv /downloads/filename.iso /virtual
+#3.Create a virtual disk space of 100MB for installing free dos
+qemu-img create virtualdisk.img 100M
+#4. Boot the iso file from cdrom for installing
+qemu –hda virtualdisk.img –cdrom fdbasecd.iso –boot d
+#follow onscreen instructions to intsall FREEDOS

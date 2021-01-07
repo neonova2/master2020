@@ -1,0 +1,36 @@
+#intsall samba
+sudo apt install samba
+#service status
+sudo service smb status
+#start
+service smb start
+#restart
+service smb restart
+#Disable firewall
+sudo ufw allow samba
+#make dir
+mkdir /home/elcot/sambashare/
+sudo nano /etc/samba/smb.conf
+
+(add the following at last)
+[sambashare]
+   comment = samba on ubuntu
+   path = /home/elcot/sambashare/
+   browseable = yes
+   read only = no
+   guest ok = yes
+#create user
+sudo useradd elcot
+#create password
+sudo smbpasswd -a elcot
+
+#enter sambashare
+smbclient \\\\localhost\\elcot -Uelcot
+	#list files
+	   ls
+	#curr dir
+	   pwd
+	#create dir
+	   mkdir test
+	#exit
+	   exit

@@ -1,0 +1,23 @@
+#install cmake
+sudo apt-get install cmake
+#create gnumake dir
+mkdir gnumake
+cd gnumake
+#create squareroot.c
+gedit squareroot.c
+
+#conpiling
+gedit squareroot.c -o squareroot -lm
+./squareroot 25
+./squareroot 5
+
+#create makefile
+gedit Makefile
+
+gcc sqrt.c -o sqrt -lm
+
+make
+
+./squareroot 25
+
+./squareroot 5

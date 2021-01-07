@@ -1,0 +1,9 @@
+
+uname -r
+
+sudo apt-get update
+sudo apt-get install git fakeroot build-essential 
+
+#Once the download complete move the downloaded kernel source to /xxx/yyy.
+cd Downloads
+mv linux-3.2.7.tar.bz2 /xxx/yy

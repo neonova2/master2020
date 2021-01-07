@@ -1,0 +1,24 @@
+#intsall ant and java
+sudo apt-get install ant
+sudo apt-get install openjdk-headless
+
+#create build_system
+mkdir  build_systems
+cd build_systems
+
+mkdir ant
+cd ant
+mkdir -p src/hello
+
+gedit src/hello/HelloWorld.java
+
+mkdir -p build/classes
+javac -sourcepath src -d build/classes/ src/hello/HelloWorld.java
+java -cp build/classes hello.HelloWorld
+
+#write ant build file
+gedit build.xml
+
+ant clean
+ant compile jar run
+

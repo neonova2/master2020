@@ -1,0 +1,22 @@
+#intsall fuse
+sudo apt install fuse
+sudo apt install libfuse-dev
+
+#create dir
+mkdir fuse
+cd fuse
+gedit hello.c
+
+gcc -Wall `pkg-config fuse --cflags --libs` hello.c -o hello
+
+sudo bash
+
+mkdir tmp
+.hello tmp/
+ls tmp/
+#hello will be printed
+cat tmp/hello
+#Hello World!
+unmount tmp/
+
+

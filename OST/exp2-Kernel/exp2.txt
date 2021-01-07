@@ -1,0 +1,28 @@
+#check Kernel version
+uname -r
+
+Prerequisite :
+1) Virtual Box + Ubuntu OS / Ubuntu System / Any Cloud Instance( Azure/AWS ).
+2) Linux Kernel (Download the latest version(5.8.5) from www.kernel.org )
+
+First step is to open the terminal, and then follow the commands one by one,
+
+1) sudo apt-get update
+
+2) sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc
+
+Now redirect to the Downloads where your newly downloaded linux kernel is situated.
+3) cd Downloads
+4) tar xf linux-5.8.5.tar.xz
+5) cd linux-5.8.5
+6) cp /boot/config-$(uname -r) .config
+7) sudo apt-get install flex
+8) sudo apt-get install bison
+9) make menuconfig
+10) make
+
+Note : 10th Command will take more time, Minimum it will take 1 to 2 Hours.
+
+11) make modules_install
+12) make install
+

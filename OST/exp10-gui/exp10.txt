@@ -1,0 +1,45 @@
+#intsall qt4
+sudo apt-get update
+sudo apt-get install libqt4-dev
+
+#create qthello dir
+mkdir qthello
+cd qthello
+#create qthello.cpp
+gedit qthello.cpp
+
+qmake-qt4 -project
+qmake-qt4
+make
+
+./qthello
+
+#create qtbutton
+cd ..
+mkdir qtbutton
+cd qtbutton
+
+gedit qtbutton.cpp
+
+qmake-qt4 -project
+qmake-qt4
+make
+
+./qtbutton
+
+#create qtmenu
+cd ..
+mkdir qtmenu
+cd qtmenu
+
+gedit mymenu.h
+gedit mymenu.cpp
+gedit main.cpp
+
+qmake-qt4 -project
+qmake-qt4
+make
+
+./qtmenu 
+
+

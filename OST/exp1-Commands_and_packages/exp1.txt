@@ -1,0 +1,40 @@
+#Basic commands
+#list
+     ls
+#Directory
+	mkdir
+	rmdir -r
+	cd dir
+	touch name.txt
+	rm filename
+	mv old_name new_name
+#network
+	ping "host address"
+	traceroute domain.com
+	ifconfig
+	bind
+	telnet
+	nslookup domain
+#file permissions
+	chmod [mode] file/dir
+     
+#whether installed or not RPM
+	rpm -qa | grep {pkg-name}
+#list of packages
+	rpm -qa
+#Dwnld package from repository
+	sudo add-apt-repository "deb repository"
+	sudo apt install "package"
+#install package install
+	rpm -i pkg.rpm
+#update package
+	rpm -u pkg.rpm
+#Both install and upgrade
+	rpm -uhv pkg.rpm
+#YUM
+	sudo yum install "pkg"
+#run the package
+	name.rpm
+
+#Packages
+	     
