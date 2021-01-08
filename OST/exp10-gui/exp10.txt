@@ -1,6 +1,10 @@
 #intsall qt4
 sudo apt-get update
+sudo add-apt-repository ppa:gezakovacs/ppa
 sudo apt-get install libqt4-dev
+sudo apt-get install libqt4-declarative
+sudo apt install libqt4* libqtcore4 libqtgui4 libqtwebkit4 qt4*
+sudo apt-get install qt4-qmake
 
 #create qthello dir
 mkdir qthello
